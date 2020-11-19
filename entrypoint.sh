@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+service mysql start &
 PARAMS="--permit-write --reconnect --reconnect-time 1"
 
 if [[ -n $BASIC_AUTH_USER || -n $BASIC_AUTH_PASS ]]; then
